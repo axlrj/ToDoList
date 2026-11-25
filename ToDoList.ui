@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Lista de Tareas</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget {
+  font-family: &quot;Segoe UI&quot;;
+}
+QMainWindow, QWidget#centralwidget {
+  background-color: #f4f6fb;
+}
+QLabel#lblTitulo {
+  color: #2d3a8c;
+  font-size: 26px;
+  font-weight: bold;
+}
+QLineEdit {
+  background-color: white;
+  color: #1f2440;
+  border: 2px solid #c9d1e8;
+  border-radius: 8px;
+  padding: 0px 10px;
+  font-size: 14px;
+}
+QLineEdit:focus {
+  border-color: #4a63e7;
+}
+QPushButton {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+QPushButton#btnAgregar {
+  background-color: #4a63e7;
+}
+QPushButton#btnAgregar:hover {
+  background-color: #3a50c9;
+}
+QPushButton#btnEditar {
+  background-color: #f0a020;
+}
+QPushButton#btnEditar:hover {
+  background-color: #d48a10;
+}
+QPushButton#btnEliminar {
+  background-color: #e5484d;
+}
+QPushButton#btnEliminar:hover {
+  background-color: #c93a3f;
+}
+QListWidget {
+  background-color: white;
+  color: #1f2440;
+  border: 2px solid #c9d1e8;
+  border-radius: 10px;
+  padding: 6px;
+  font-size: 15px;
+  outline: 0;
+}
+QListWidget::item {
+  padding: 6px;
+  border-bottom: 1px solid #eef0f6;
+}
+QListWidget::item:selected {
+  background-color: #e3e8ff;
+  color: #2d3a8c;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lblTitulo">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>540</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Lista de Tareas</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="edtTarea">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>85</y>
+      <width>330</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>Escribe una tarea...</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnAgregar">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>85</y>
+      <width>95</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Agregar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnEditar">
+    <property name="geometry">
+     <rect>
+      <x>475</x>
+      <y>85</y>
+      <width>95</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Editar</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="lstTareas">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>145</y>
+      <width>540</width>
+      <height>340</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Mapa mental</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ensayo</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Ejercicios</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Maqueta</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Resumen</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="btnEliminar">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>500</y>
+      <width>540</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Eliminar</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
